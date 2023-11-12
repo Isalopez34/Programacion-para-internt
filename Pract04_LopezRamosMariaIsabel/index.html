@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1> QUIZ GAME</h1>
+        <P>Juego de Capitales</P>
+    </header>
+    <div class="container">
+        <section id="p0">
+            <h2>1.- ¿Cual es la capital de Rusia?</h2>
+            <label>
+                <input type="radio" value="1" name="p0" onclick="respuesta(0,this)"> Kiev
+            </label>
+            <label>
+                <input type="radio" value="2" name="p0" onclick="respuesta(0,this)"> Moscú
+            </label>
+            <label>
+                <input type="radio" value="3" name="p0" onclick="respuesta(0,this)"> Singapur 
+            </label>
+        </section>
+
+        <section id="p1">
+            <h2>2.- ¿Cual es la capital de Lima?</h2>
+            <label>
+                <input type="radio" value="1" name="p1" onclick="respuesta(1,this)"> Juliaca
+            </label>
+            <label>
+                <input type="radio" value="2" name="p1" onclick="respuesta(1,this)"> La paz
+            </label>
+            <label>
+                <input type="radio" value="3" name="p1" onclick="respuesta(1,this)"> Lima
+            </label>
+        </section>
+
+        <section id="p2">
+            <h2>3.- ¿Cual es la capital de Italia?</h2>
+            <label>
+                <input type="radio" value="1" name="p2" onclick="respuesta(2,this)"> Roma
+            </label>
+            <label>
+                <input type="radio" value="2" name="p2" onclick="respuesta(2,this)"> Lima
+            </label>
+            <label>
+                <input type="radio" value="3" name="p2" onclick="respuesta(2,this)"> Madrid
+            </label>
+        </section>
+
+        <section id="p3">
+            <h2>4.- ¿Cual es la capital de España?</h2>
+            <label>
+                <input type="radio" value="1" name="p3" onclick="respuesta(3,this)"> Madrid
+            </label>
+            <label>
+                <input type="radio" value="2" name="p3" onclick="respuesta(3,this)"> Guadalajara
+            </label>
+            <label>
+                <input type="radio" value="3" name="p3" onclick="respuesta(3,this)"> La paz
+            </label>
+        </section>
+
+        <section id="p4">
+            <h2>5.- ¿Cual es la capital de Canada?</h2>
+            <label>
+                <input type="radio" value="1" name="p4" onclick="respuesta(4,this)"> Ottawa
+            </label>
+            <label>
+                <input type="radio" value="2" name="p4" onclick="respuesta(4,this)"> Rio de janeiro
+            </label>
+            <label>
+                <input type="radio" value="3" name="p4" onclick="respuesta(4,this)"> cdmx
+            </label>
+        </section>
+        <br>
+        <button onclick="corregir()">CORREGIR</button>
+        <h2></h2>Respuestas Correctas: <span id="resultado"></span></h2>
+    
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
